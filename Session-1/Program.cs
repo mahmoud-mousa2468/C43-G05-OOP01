@@ -53,6 +53,43 @@
             // 4. Abstraction
             #endregion
 
+            #region Encapsulation Using Setter Getter Methods
+            // 1. Encapsulation :
+            // Class Or Struct
+            // Seperate The Data(Attributes) Definition From Its Use
+
+            //Employee
+            //Id Name Salary
+
+            // 1. End User Access Data Itself
+            // 2. No Data Validation
+            // 3. No Read Only Filed
+
+            // Apply Encapsulation
+            //1. Make All Data(Attributes) private
+            //2. Access Data Through
+                // 2.1. Setter Getter Method
+                // 2.2. Properties
+            Employee E01 = new Employee();
+
+            //E01.id = 1;
+            //E01.name = "Ahmed";
+            //E01.Salary = 12000;
+
+            //Console.WriteLine(E01.id);
+            //Console.WriteLine(E01.name);
+            //Console.WriteLine(E01.Salary);
+
+            E01.SetId(1);
+            E01.SetName("Ahmed");
+            E01.SetSalary(12000);
+
+            Console.WriteLine(E01.GetId());
+            Console.WriteLine(E01.GetName());
+            Console.WriteLine(E01.GetSalary());
+
+            #endregion
+
 
 
 
