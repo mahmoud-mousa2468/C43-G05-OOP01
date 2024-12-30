@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            #region Struct
             //Struct : Value Type :Stack
 
             Point P01;
@@ -33,6 +34,24 @@
 
             // output change based on the override on tostring
             Console.WriteLine(P01); //(1,2)
+            #endregion
+
+            #region OOP Overview
+            // OOP : Object Oriented Programming
+            // Programming Paradigm
+            // OOP : The Paradigm Use For Build Any Business
+
+            //Class : Blueprint Of The Object
+            //Object : Specific Instance From Class
+
+            // 4 Pillars
+            // ================
+
+            // 1. Encapsulation
+            // 2. Inheritance
+            // 3. Ploymorphism
+            // 4. Abstraction
+            #endregion
 
 
 
