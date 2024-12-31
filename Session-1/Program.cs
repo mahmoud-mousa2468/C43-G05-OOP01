@@ -70,7 +70,7 @@
             //2. Access Data Through
                 // 2.1. Setter Getter Method
                 // 2.2. Properties
-            Employee E01 = new Employee();
+            //Employee E01 = new Employee();
 
             //E01.id = 1;
             //E01.name = "Ahmed";
@@ -80,17 +80,27 @@
             //Console.WriteLine(E01.name);
             //Console.WriteLine(E01.Salary);
 
-            E01.SetId(1);
-            E01.SetName("Ahmed");
-            E01.SetSalary(12000);
+            //E01.SetId(1);
+            //E01.SetName("Ahmed");
+            //E01.SetSalary(12000);
 
-            Console.WriteLine(E01.GetId());
-            Console.WriteLine(E01.GetName());
-            Console.WriteLine(E01.GetSalary());
+            //Console.WriteLine(E01.GetId());
+            //Console.WriteLine(E01.GetName());
+            //Console.WriteLine(E01.GetSalary());
 
             #endregion
 
+            #region Encapsulation Using Properties
+            Employee E01 = new Employee();
 
+            E01.Id = 12;
+            E01.Name = "Ahmed";
+            E01.Salary = 122000;
+
+            Console.WriteLine(E01.Id);
+            Console.WriteLine(E01.Name);
+            Console.WriteLine(E01.Salary);
+            #endregion
 
 
 
