@@ -4,40 +4,76 @@
     {
         private int id;
         private string name;
-        private double Salary;
+        private double salary;
 
         // Apply Encapsulation User Setter Getter Method
 
-        public void SetId(int id)
+        #region Encapsulation User Setter Getter Method
+        //public void SetId(int id)
+        //{
+        //    this.id = id;
+        //}
+        //public int GetId()
+        //{
+        //    return id;
+        //}
+        //public void SetName(string name)
+        //{
+        //    this.name = name;
+        //}
+        //public string GetName()
+        //{
+        //    return name;
+        //}
+        //public void SetSalary(double Salary)
+        //{
+        //    this.Salary = Salary;
+        //}
+        //public double GetSalary()
+        //{
+        //    return Salary;
+        //}
+
+        //public Employee(int id, string name, double salary)
+        //{
+        //    SetId(id);
+        //    SetName(name);
+        //    SetSalary(Salary);
+        //} 
+        #endregion
+
+
+        // Apply Encapsulation User Properties
+
+
+        #region Encapsulation Using Properties
+
+        //1. Full Property
+        public int Id
         {
-            this.id = id;
+            set { id = value; }
+            get { return id; }
         }
-        public int GetId()
+        public string Name
         {
-            return id;
+            set { 
+                if(value.Length>=0 && value.Length<=20)
+                    name = value;
+            }
+            get { return name; }
         }
-        public void SetName(string name)
+        public double Salary
         {
-            this.name = name;
-        }
-        public string GetName()
-        {
-            return name;
-        }
-        public void SetSalary(double Salary)
-        {
-            this.Salary = Salary;
-        }
-        public double GetSalary()
-        {
-            return Salary;
+            set { 
+                if(value>0)
+                salary = value; }
+            get { return salary; }
         }
 
-        public Employee(int id, string name, double salary)
-        {
-            SetId(id);
-            SetName(name);
-            SetSalary(Salary);
-        }
+
+        // Automatic Property
+        public string Address { set; get; }
+
+        #endregion
     }
 }
