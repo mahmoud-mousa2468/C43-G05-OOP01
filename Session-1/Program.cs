@@ -4,21 +4,22 @@
     {
         static void Main(string[] args)
         {
+            #region struct
             //Struct : Value Type :Stack
 
-            Point P01;
+            //Point P01;
             //Declare For Object From Type 'Point'
             //P01:Object
             //Allocate UnInitialized 8 Bytes At The Stack
 
-            P01.X = 12;
-            P01.Y = 13;
-            Console.WriteLine(P01.X);
-            Console.WriteLine(P01.Y);
+            //P01.X = 12;
+            //P01.Y = 13;
+            //Console.WriteLine(P01.X);
+            //Console.WriteLine(P01.Y);
 
             // when you use new so you use the constructor which set all Variables to default value(0)
-            P01 = new Point(1, 2);
-            Console.WriteLine(P01.Y);
+            //P01 = new Point(1, 2);
+            //Console.WriteLine(P01.Y);
 
 
             //Console.WriteLine(P01); // Session_1.Point
@@ -29,13 +30,59 @@
             //Console.WriteLine(P01.ToString()); //Session_1.Point
 
             // output change based on the override on tostring
-            Console.WriteLine(P01.ToString()); //(1,2)
+            //Console.WriteLine(P01.ToString()); //(1,2)
 
             // output change based on the override on tostring
-            Console.WriteLine(P01); //(1,2)
+            //Console.WriteLine(P01); //(1,2) 
+            #endregion
 
+            #region Encapsulation Using Setter Getter Methods
+            //1.Encapsulation :
+            //Class Or Struct
+            //Seperate The Data(Attributes) Definition From Its Use
 
+            //Employee
+            //Id Name Salary
 
+            //1.End User Access Data Itself
+            // 2.No Data Validation
+            // 3.No Read Only Filed
+
+            // Apply Encapsulation
+            //1.Make All Data(Attributes) private
+            //2. Access Data Through
+            // 2.1. Setter Getter Method
+            // 2.2. Properties
+            //Employee E01 = new Employee();
+
+            //E01.id = 1;
+            //E01.name = "Ahmed";
+            //E01.Salary = 12000;
+
+            //Console.WriteLine(E01.id);
+            //Console.WriteLine(E01.name);
+            //Console.WriteLine(E01.Salary);
+
+            //E01.SetId(1);
+            //E01.SetName("Ahmed");
+            //E01.SetSalary(12000);
+
+            //Console.WriteLine(E01.GetId());
+            //Console.WriteLine(E01.GetName());
+            //Console.WriteLine(E01.GetSalary()); 
+            #endregion
+
+            #region Encapsulation Using Properties
+            //Employee E01 = new Employee();
+
+            //E01.Id = 12;
+            //E01.Name = "Ahmed";
+            //E01.Salary = 122000;
+
+            //Console.WriteLine(E01.Id);
+            //Console.WriteLine(E01.Name);
+            //Console.WriteLine(E01.Salary);
+            #endregion
 
             #region Indexer
 
@@ -63,8 +110,8 @@
 
             #region Class Internal Constructor Chaining
             //Car C01;
-            //Declare For Reference (Pointer) From Type 'Car'
-            //C01 :Can Refer To Object From Type 'Car' Or Any Class Inherited from it
+            //Declare For Reference(Pointer) From Type 'Car'
+            //C01: Can Refer To Object From Type 'Car' Or Any Class Inherited from it
             // c01 : refer To Null
 
             //Console.WriteLine(C01);
@@ -73,20 +120,18 @@
             // 0 Bytes Will Be Allocated At Heap
 
             //C01 = new Car(1, 200, "XYZ");
-            
+
             //new
-            //1-Allocate The Number Of Required Bytes At Heap For The Object
-            //2-Initailized The Allocated Bytes With The Default Value 
-            //3-Call User-Defined Constructor If Exists
-            //4- Assign The Object To The Reference
+            //1 - Allocate The Number Of Required Bytes At Heap For The Object
+            //2 - Initailized The Allocated Bytes With The Default Value
+            //3 - Call User - Defined Constructor If Exists
+            //4 - Assign The Object To The Reference
 
             //Console.WriteLine(C01.Id);
             //Console.WriteLine(C01.Model);
             //Console.WriteLine(C01.Speed);
 
             //Console.WriteLine(C01);
-
-
             #endregion
 
         }
